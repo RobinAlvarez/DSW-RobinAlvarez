@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+   
+}
+
+body {
+    background: #34495e;
+}
+
+header{
+    background-color: #313D52;
+    text-align: center;
+    padding: 10px;
+    color:white;
+    font-family: verdana;
+   
+}
+
+/* navegacion*/
+
+.navegacion{
+    width: auto;
+    margin: 30px auto;
+    background:#fff;
+    text-align: center;
+    
+}
+
+.navegacion li{
+    list-style: none;
+}
+
+.menu > li{
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: verdana;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #8e44ad;
+    transition: all .3s;
+}
+
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: auto;
+    visibility: none;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a{
+    display:block;    
+    padding: 15px;
+    color:#fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    display:block;
+    opacity: 1;
+
+}
+
+/*menu*/
+section{padding: 10px;
+
+
+}
+footer{
+    text-align: center;
+    color: #fff;
+    font-family: verdana;
+    font-size: 12px;
+    padding: 20px;
+}
+section{
+    margin: auto;
+    
+    grid-column: 2/3;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+
+}
+
+
+.text {
+    color: white;
+    margin-left: 25px;
+    padding: 10px;
+    font-family: verdana;
+    font-size: 11px;
+    
+
+}
+.text1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: verdana;
+    font-size: 11px;
+    
+
+}
+.text2 {
+    color:tomato;
+    font-family: verdana;
+    font-size: 11px;
+    
+
+}
+.cuadro{
+    background: #313D52;
+    width: auto;
+    height: auto;
+}
+
+/*video*/
+video{
+    width:100%;
+    max-width:600px;
+    }
+.cen{text-align: center;}

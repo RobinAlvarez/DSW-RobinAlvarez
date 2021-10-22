@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["B1HOcrt"]); }
+
+__d("CometProfileVerificationBadgePopoverQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="3887981861237282"}),null);
