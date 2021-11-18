@@ -1,7 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["vFp4V81"]); }
-
-__d("CometHeroHoldTrigger.react",["hero-tracing-placeholder"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=d("hero-tracing-placeholder").HeroHoldTrigger}),98);
-__d("compactArray",[],(function(a,b,c,d,e,f){"use strict";function a(a){var b=[];for(var c=0;c<a.length;++c){var d=a[c];d!=null&&b.push(d)}return b}f["default"]=a}),66);
-__d("first",[],(function(a,b,c,d,e,f){"use strict";function a(a){for(var a=a,b=Array.isArray(a),c=0,a=b?a:a[typeof Symbol==="function"?Symbol.iterator:"@@iterator"]();;){var d;if(b){if(c>=a.length)break;d=a[c++]}else{c=a.next();if(c.done)break;d=c.value}d=d;return d}return null}f["default"]=a}),66);
-__d("WaitTimeContext",["react"],(function(a,b,c,d,e,f,g){"use strict";a=d("react");b={waitTimeAreaName:void 0,waitTimeAreaOwner:void 0};c=a.createContext(b);g["default"]=c}),98);
-__d("LoadingMarker.react",["CometHeroHoldTrigger.react","LoadingMarkerGated","WaitTimeContext","react"],(function(a,b,c,d,e,f,g){"use strict";var h=d("react"),i=d("react").useContext;function a(a){return a.children}a.displayName=a.name+" [from "+f.id+"]";function b(a){return function(b){var d=i(c("WaitTimeContext"));return h.jsxs(h.Fragment,{children:[h.jsx(c("CometHeroHoldTrigger.react"),{hold:!0,description:"LoadingMarker("+((d=d.waitTimeAreaName)!=null?d:"unnamed")+")"}),h.jsx(a,babelHelpers["extends"]({},b))]})}}e=b(c("LoadingMarkerGated").component||a);d=e;g["default"]=d}),98);
