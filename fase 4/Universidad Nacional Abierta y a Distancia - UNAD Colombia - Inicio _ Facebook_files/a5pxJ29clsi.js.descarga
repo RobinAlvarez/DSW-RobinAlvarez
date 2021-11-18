@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["3fmX3Ii"]); }
-
-__d("QPLJoinUtils",[],(function(a,b,c,d,e,f){"use strict";function a(a,b,c,d){var e;c===void 0&&(c=0);a.markerAnnotate(b,{string:(e={},e.source="client",e)},{instanceKey:c});a.markerAnnotate(b,{string:(e={},e.join_id=d,e)},{instanceKey:c})}function b(a,b,c,d,e){c===void 0&&(c=0),e===void 0&&(e=a.currentTimestamp()),a.markerPoint(b,"join_request_"+d,{instanceKey:c,timestamp:e,data:d!=null?{string:{__key:d}}:null})}function c(a,b,c,d,e){c===void 0&&(c=0),e===void 0&&(e=a.currentTimestamp()),a.markerPoint(b,"join_response_"+d,{instanceKey:c,timestamp:e,data:d!=null?{string:{__key:d}}:null})}f.setJoinId=a;f.markJoinRequest=b;f.markJoinResponse=c}),66);
