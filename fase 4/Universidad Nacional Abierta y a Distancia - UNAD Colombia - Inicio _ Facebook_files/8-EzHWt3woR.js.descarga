@@ -1,0 +1,13 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["sYW1fav"]); }
+
+__d("useHeroFailTrigger",["InteractionTracingMetrics","hero-tracing-placeholder","performanceNow","react","requireWeak"],(function(a,b,c,d,e,f,g){"use strict";b=d("react");var h=b.useCallback,i=b.useContext,j;c("requireWeak")("hero-tracing",function(a){j=a});function a(){var a=i(d("hero-tracing-placeholder").HeroCurrentInteractionForLoggingContext),b=i(d("hero-tracing-placeholder").HeroInteractionContext.Context);return h(function(d){var e,f=d.description;d=d.error;e=(e=d==null?void 0:d.messageFormat)!=null?e:d==null?void 0:d.message;d=e==null&&f==null?"unknown":[f,e].filter(Boolean).join(", ");e=(f=a.current)==null?void 0:f.interactionUUID;if(e==null)return;f=c("InteractionTracingMetrics").get(e);if(f==null?void 0:f.metadata.isError)return;c("InteractionTracingMetrics").addMetadata(e,"isError",1);c("InteractionTracingMetrics").addMetadata(e,"errorComponent",d);if(j){var g=j;g=g.HeroLogger;var h=b.pageletStack;f&&g.measure(e,h,"Error","Error: "+d,f.start,c("performanceNow")())}},[b,a])}g["default"]=a}),98);
+__d("XControllerWithPageTokenURIUpdater",[],(function(a,b,c,d,e,f){"use strict";a=function(a){window.history&&window.history.replaceState(window.history.state,null,a)};f.updateURI=a}),66);
+__d("FBBLiveQuestionContainerQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="3997080900348028"}),null);
+__d("FeedbackAddStreamingReactionSubscription_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="2699917140031023"}),null);
+__d("FollowButtonUnfollowMutation_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="3625885644207626"}),null);
+__d("VideoComponentContextMenuQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="3919827038104857"}),null);
+__d("VideoComponentEmbeddedControlsQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="3598766410251560"}),null);
+__d("VideoComponentLiveVideoIndicatorQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="3816639018452553"}),null);
+__d("VideoComponentStreamingReactionTrayQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="4363804353647431"}),null);
+__d("VideoComponentWithLiveBroadcastQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="3626779650764320"}),null);
+__d("useLiveVideoInteractiveAlertSubscription_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="3589857831118612"}),null);

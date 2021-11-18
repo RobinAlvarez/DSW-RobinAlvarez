@@ -1,0 +1,6 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["A0m5Ewa"]); }
+
+__d("MWChatCrushState.bs",[],(function(a,b,c,d,e,f){"use strict";a=[];b=[];c=[];d=[];e={openTabsState:a,chatHeads:b,forceCollapsedHeads:c,notificationTimers:d};f.none=e}),null);
+__d("MWChatMultitabStateHook.bs",["MWChatCrushState.bs","MWChatMultitabContext.bs","MWChatMultitabDispatcher.bs","bs_curry","react"],(function(a,b,c,d,e,f){"use strict";var g,h=g||b("react");function a(a){var c=h.useContext(b("MWChatMultitabContext.bs").context);a=h.useState(function(){if(c!==void 0)return b("MWChatMultitabDispatcher.bs").state(c);else return b("MWChatCrushState.bs").none});var d=a[1];h.useEffect(function(){if(c===void 0)return;var a=b("MWChatMultitabDispatcher.bs").listen(c,function(a){return b("bs_curry")._1(d,function(a){return b("MWChatMultitabDispatcher.bs").state(c)})});return function(c){return b("bs_curry")._1(a,void 0)}},[c,d]);return a[0]}f.useHook_DEPRECATED=a}),null);
+__d("MWChatAreAllChatsClosed.bs",["MWChatMultitabStateHook.bs"],(function(a,b,c,d,e,f){"use strict";function a(a){a=b("MWChatMultitabStateHook.bs").useHook_DEPRECATED(void 0);a=a.chatHeads;return a.length===0}f.useHook=a}),null);
+__d("MWChatAreAllChatsClosed.re",["MWChatAreAllChatsClosed.bs"],(function(a,b,c,d,e,f){a=b("MWChatAreAllChatsClosed.bs").useHook;f.useHook=a}),null);
